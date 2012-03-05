@@ -5,6 +5,12 @@ include /usr/share/cdbs/1/class/qmake.mk
 
 QMAKE=qmake-qt4
 
+PACKAGE = psimedia
+DEVELOPER = psi-plus
+PROJECT = psimedia
+
+CUR_VER = $(shell dpkg-parsechangelog | sed -ne 's/^Version: \(\([0-9]\+\):\)\?\(.*\)-.*/\3/p')
+
 configure/psi-plus-plugin-psimedia::
 	qt-qconf
 	./configure
@@ -12,3 +18,16 @@ configure/psi-plus-plugin-psimedia::
 clean::
 	rm -rf gstprovider/gstelements/static/lib
 	rm -f conf.log conf.pri configure
+
+get-orig-source::
+	# preparation
+	rm -rf  "$(PACKAGE)-$(CUR_VER)"/ master
+	# main sources
+	wget -4 "http://nodeload.github.com/$(DEVELOPER)/$(PROJECT)/tarball/master"
+	rm -rf $(DEVELOPER)-$(PROJECT)-*
+	tar xzf master
+	mv $(DEVELOPER)-$(PROJECT)-* "$(PACKAGE)-$(CUR_VER)"
+	# tarball
+	tar -cjf "$(PACKAGE)_$(CUR_VER).orig.tar.bz2" "$(PACKAGE)-$(CUR_VER)"
+	# cleaning
+	rm -rf "$(PACKAGE)-$(CUR_VER)" "$(CUR_VER)" "master"

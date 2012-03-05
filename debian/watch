@@ -1,2 +1,6 @@
-version=3
-http://delta.affinix.com/download/psimedia/psimedia-([\d\.]+)\.tar\.bz2
+# New location of sources:
+# https://github.com/psi-plus/psimedia
+#
+# There are no git tags or tarballs in downloads section. Sources from the last
+# commit in master branch are used in package. But there is no way to get
+# program version for checking. At least for now...

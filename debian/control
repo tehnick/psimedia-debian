@@ -2,11 +2,14 @@ Source: psimedia
 Section: net
 Priority: extra
 Maintainer: Boris Pek <tehnick-8@mail.ru>
-Build-Depends: cdbs (>= 0.4.53), debhelper (>= 7.0.1), libqt4-dev (>= 4.4.0), libgstreamer-plugins-base0.10-dev (>= 0.10.23), liboil0.3-dev, libspeexdsp-dev (>= 1.2~rc1), qconf
-Homepage: http://delta.affinix.com/psimedia/
+Build-Depends: cdbs (>= 0.4.53), debhelper (>= 7.0.1),
+ libqt4-dev (>= 4.4.0), libspeexdsp-dev (>= 1.2~rc1), qconf,
+ libgstreamer-plugins-base0.10-dev (>= 0.10.23), liboil0.3-dev
+Homepage: https://github.com/psi-plus/psimedia
 Vcs-Git: git://github.com/tehnick/psimedia-debian.git
 Vcs-Browser: https://github.com/tehnick/psimedia-debian
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
+DM-Upload-Allowed: yes
 
 Package: psi-plus-plugin-psimedia
 Architecture: any

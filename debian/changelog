@@ -1,3 +1,9 @@
+psimedia (1.0.3-git20120101-0000000-1) unstable; urgency=low
+
+  * FAKE
+
+ -- Boris Pek <tehnick-8@mail.ru>  Tue, 01 Jan 2011 00:45:31 +0300
+
 psimedia (1.0.3+svn737-2) unstable; urgency=low
 
   * Added dependence from package libqca2-plugin-ossl (Closes: #632233)
