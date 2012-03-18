@@ -1,8 +1,17 @@
-psimedia (1.0.3-git20120101-0000000-1) unstable; urgency=low
+psimedia (1.0.3-git20120319-78a4c9e-1) unstable; urgency=low
 
-  * FAKE
+  * New upstream release.
+  * Bumped Standards-Version to 3.9.3.
+  * debian/control was updated:
+    - added string `DM-Upload-Allowed: yes'
+    - project homepage was updated
+  * debian/copyright was updated:
+    file was rewritten in according to Copyright format 1.0
+  * debian/rules was updated: added additional section get-orig-source
+  * debian/watch was updated: new location of sources
+  * debian/patches/* were deleted: they were applied in upstream
 
- -- Boris Pek <tehnick-8@mail.ru>  Tue, 01 Jan 2011 00:45:31 +0300
+ -- Boris Pek <tehnick-8@mail.ru>  Mon, 19 Mar 2012 01:22:08 +0200
 
 psimedia (1.0.3+svn737-2) unstable; urgency=low
 
