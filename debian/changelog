@@ -1,4 +1,4 @@
-psimedia (1.0.3-git20120319-78a4c9e-1) unstable; urgency=low
+psimedia (1.0.3-git20120327-78a4c9e-1) unstable; urgency=low
 
   * New upstream release.
   * Bumped Standards-Version to 3.9.3.
@@ -9,9 +9,12 @@ psimedia (1.0.3-git20120319-78a4c9e-1) unstable; urgency=low
     file was rewritten in according to Copyright format 1.0
   * debian/rules was updated: added additional section get-orig-source
   * debian/watch was updated: new location of sources
-  * debian/patches/* were deleted: they were applied in upstream
+  * debian/patches/* were updated:
+    - deleted old patches (they were applied in upstream)
+    - added new file glib-single-include (fixes build with glib >= 2.32)
+      (Closes: #665600)
 
- -- Boris Pek <tehnick-8@mail.ru>  Mon, 19 Mar 2012 01:22:08 +0200
+ -- Boris Pek <tehnick-8@mail.ru>  Tue, 27 Mar 2012 20:39:22 +0300
 
 psimedia (1.0.3+svn737-2) unstable; urgency=low
 
