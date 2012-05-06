@@ -1,3 +1,10 @@
+psimedia (1.0.3-git20120506-fb54b6e-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/patches/* were deleted: accepted in upstream.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Sun, 06 May 2012 18:11:01 +0300
+
 psimedia (1.0.3-git20120327-78a4c9e-1) unstable; urgency=low
 
   * New upstream release.
