@@ -1,0 +1,17 @@
+Description: Add hardening flags in compiler options
+Author: Boris Pek <tehnick-8@mail.ru>
+Last-Update: 2013-03-06
+
+--- a/gstprovider/gstprovider.pro
++++ b/gstprovider/gstprovider.pro
+@@ -4,3 +4,10 @@
+ INCLUDEPATH += ../psimedia
+ 
+ include(gstprovider.pri)
++
++unix:!mac {
++   QMAKE_CXXFLAGS += $(Q_CXXFLAGS)
++   QMAKE_CFLAGS_DEBUG += $(Q_CFLAGS)
++   QMAKE_CFLAGS_RELEASE += $(Q_CFLAGS)
++   QMAKE_LFLAGS += $(Q_LDFLAGS)
++}
