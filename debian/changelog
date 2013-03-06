@@ -1,3 +1,18 @@
+psimedia (1.0.3-git20130306-c2b8446-1) experimental; urgency=low
+
+  * New Git snapshot.
+  * Remove obsolete DM-Upload-Allowed flag.
+  * Bump Standards-Version to 3.9.4 (was 3.9.3): no changes required.
+  * Bump debhelper version to 8 (was 7.0.1); update debian/compat.
+  * Update debian/rules:
+    - switch from cdbs to dh
+    - use hardening flags in compiler options
+    - add -Wl,--as-needed to LDFLAGS
+  * Add patch debian/patches/add-hardening-flags-in-compiler-options.
+  * Update years in debian/copyright.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Wed, 06 Mar 2013 20:42:36 +0200
+
 psimedia (1.0.3-git20120506-fb54b6e-1) unstable; urgency=low
 
   * New upstream release.
