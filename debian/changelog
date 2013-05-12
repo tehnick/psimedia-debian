@@ -1,3 +1,9 @@
+psimedia (1.0.3-git20130306-c2b8446-2) unstable; urgency=low
+
+  * Move package to unstable: no changes required.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Sun, 12 May 2013 22:42:33 +0300
+
 psimedia (1.0.3-git20130306-c2b8446-1) experimental; urgency=low
 
   * New Git snapshot.
