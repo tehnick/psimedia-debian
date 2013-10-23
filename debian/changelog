@@ -1,3 +1,10 @@
+psimedia (1.0.3-git20131023-ea487d3-1) unstable; urgency=low
+
+  * New Git snapshot.
+  * Simplify get-orig-source section in debian/rules.
+
+ -- Boris Pek <tehnick@debian.org>  Wed, 23 Oct 2013 04:34:16 +0300
+
 psimedia (1.0.3-git20130306-c2b8446-2) unstable; urgency=low
 
   * Move package to unstable: no changes required.
