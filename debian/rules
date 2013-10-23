@@ -1,10 +1,9 @@
 #!/usr/bin/make -f
 
 PACKAGE = psimedia
-DEVELOPER = psi-plus
-PROJECT = psimedia
 
-CUR_VER = $(shell dpkg-parsechangelog | sed -ne 's/^Version: \(\([0-9]\+\):\)\?\(.*\)-.*/\3/p')
+DEBIAN_PATH := $(abspath $(dir $(MAKEFILE_LIST)))
+CUR_VER = $(shell cd "$(DEBIAN_PATH)/.." && dpkg-parsechangelog | sed -ne 's/^Version: \(\([0-9]\+\):\)\?\(.*\)-.*/\3/p')
 
 Q_CPPFLAGS:=$(shell dpkg-buildflags --get CPPFLAGS)
 Q_CXXFLAGS:=$(shell dpkg-buildflags --get CXXFLAGS) $(Q_CPPFLAGS)
@@ -24,14 +23,5 @@ override_dh_auto_clean:
 	rm -f conf.log conf.pri configure
 
 get-orig-source:
-	# preparation
-	rm -rf  "$(PACKAGE)-$(CUR_VER)"/ master
-	# main sources
-	wget -4 "http://nodeload.github.com/$(DEVELOPER)/$(PROJECT)/tarball/master"
-	rm -rf $(DEVELOPER)-$(PROJECT)-*
-	tar xzf master
-	mv $(DEVELOPER)-$(PROJECT)-* "$(PACKAGE)-$(CUR_VER)"
-	# tarball
-	tar -cJf "$(PACKAGE)_$(CUR_VER).orig.tar.xz" "$(PACKAGE)-$(CUR_VER)"
-	# cleaning
-	rm -rf "$(PACKAGE)-$(CUR_VER)" "$(CUR_VER)" "master"
+	wget -c4 https://github.com/psi-plus/psimedia/archive/master.tar.gz
+	mv "master.tar.gz" "$(PACKAGE)_$(CUR_VER).orig.tar.gz"
