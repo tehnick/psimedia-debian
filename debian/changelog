@@ -1,8 +1,9 @@
-psimedia (1.0.3-git20130306-c2b8446-2~bpo70+1) wheezy-backports; urgency=low
+psimedia (1.0.3-git20131023-ea487d3-1) unstable; urgency=low
 
-  * Rebuild for wheezy-backports.
+  * New Git snapshot.
+  * Simplify get-orig-source section in debian/rules.
 
- -- Boris Pek <tehnick-8@mail.ru>  Fri, 31 May 2013 00:25:01 +0300
+ -- Boris Pek <tehnick@debian.org>  Wed, 23 Oct 2013 04:34:16 +0300
 
 psimedia (1.0.3-git20130306-c2b8446-2) unstable; urgency=low
 

@@ -1,7 +1,7 @@
 Source: psimedia
 Section: net
 Priority: extra
-Maintainer: Boris Pek <tehnick-8@mail.ru>
+Maintainer: Boris Pek <tehnick@debian.org>
 Build-Depends: debhelper (>= 8),
  libqt4-dev (>= 4.4.0), libspeexdsp-dev (>= 1.2~rc1), qconf,
  libgstreamer-plugins-base0.10-dev (>= 0.10.23), liboil0.3-dev
