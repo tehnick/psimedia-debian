@@ -3,10 +3,10 @@ Section: net
 Priority: extra
 Maintainer: Boris Pek <tehnick@debian.org>
 Build-Depends: debhelper (>= 9),
-               libgstreamer-plugins-base0.10-dev (>= 0.10.23),
+               libgstreamer-plugins-base0.10-dev,
                liboil0.3-dev,
-               libqt4-dev (>= 4.4.0),
-               libspeexdsp-dev (>= 1.2~rc1),
+               libqt4-dev,
+               libspeexdsp-dev,
                qconf
 Homepage: https://github.com/psi-plus/psimedia
 Vcs-Git: git://github.com/tehnick/psimedia-debian.git
