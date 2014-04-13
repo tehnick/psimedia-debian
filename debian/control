@@ -3,8 +3,11 @@ Section: net
 Priority: extra
 Maintainer: Boris Pek <tehnick@debian.org>
 Build-Depends: debhelper (>= 9),
- libqt4-dev (>= 4.4.0), libspeexdsp-dev (>= 1.2~rc1), qconf,
- libgstreamer-plugins-base0.10-dev (>= 0.10.23), liboil0.3-dev
+               libgstreamer-plugins-base0.10-dev (>= 0.10.23),
+               liboil0.3-dev,
+               libqt4-dev (>= 4.4.0),
+               libspeexdsp-dev (>= 1.2~rc1),
+               qconf
 Homepage: https://github.com/psi-plus/psimedia
 Vcs-Git: git://github.com/tehnick/psimedia-debian.git
 Vcs-Browser: https://github.com/tehnick/psimedia-debian
@@ -12,9 +15,12 @@ Standards-Version: 3.9.4
 
 Package: psi-plus-plugin-psimedia
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends},
-         psi-plus | psi-plus-webkit, libqca2-plugin-ossl,
-         gstreamer0.10-plugins-good, gstreamer0.10-alsa [linux-any]
+Depends: gstreamer0.10-alsa [linux-any],
+         gstreamer0.10-plugins-good,
+         libqca2-plugin-ossl,
+         psi-plus | psi-plus-webkit,
+         ${misc:Depends},
+         ${shlibs:Depends}
 Replaces: psimedia
 Description: Plugin for Psi/Psi+ for audio and video calls
  PsiMedia is a thick abstraction layer for providing
