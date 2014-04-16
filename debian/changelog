@@ -1,3 +1,21 @@
+psimedia (1.0.4-1) unstable; urgency=medium
+
+  * New Git snapshot.
+  * Bump debhelper version to 9 (was 8); update debian/compat.
+  * Bump Standards-Version to 3.9.5 (was 3.9.4): no changes required.
+  * Update debian/control
+    - update using wrap-and-sort tool
+    - delete version requirements for some build dependencies
+  * Update debian/rules:
+    - simplify rules after switching to debhelper 9
+    - add --list-missing option to dh
+    - update get-orig-source section after changes in upstream
+  * Update debian/watch: git tags are available at project github repo now.
+  * Delete patch add-hardening-flags-in-compiler-options: fixed in upstream.
+  * Update debian/copyright.
+
+ -- Boris Pek <tehnick@debian.org>  Thu, 17 Apr 2014 00:34:25 +0400
+
 psimedia (1.0.3-git20131023-ea487d3-1) unstable; urgency=low
 
   * New Git snapshot.
