@@ -4,7 +4,6 @@ Priority: extra
 Maintainer: Boris Pek <tehnick@debian.org>
 Build-Depends: debhelper (>= 9),
                libgstreamer-plugins-base0.10-dev,
-               liboil0.3-dev,
                libqt4-dev,
                libspeexdsp-dev,
                qconf
