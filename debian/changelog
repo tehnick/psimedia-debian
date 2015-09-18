@@ -1,3 +1,12 @@
+psimedia (1.0.4-2) unstable; urgency=medium
+
+  * Bump Standards-Version to 3.9.6 (was 3.9.5): no changes required.
+  * Remove unnecessary build dependency on liboil0.3-dev (Closes: #793628).
+  * Update description of psi-plus-plugin-psimedia package.
+  * Update years debian/copyright.
+
+ -- Boris Pek <tehnick@debian.org>  Fri, 18 Sep 2015 14:42:48 +0300
+
 psimedia (1.0.4-1) unstable; urgency=medium
 
   * New upstream release.
