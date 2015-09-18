@@ -21,8 +21,8 @@ Depends: gstreamer0.10-alsa [linux-any],
          ${misc:Depends},
          ${shlibs:Depends}
 Replaces: psimedia
-Description: Plugin for Psi/Psi+ for audio and video calls
+Description: Plugin for Psi+ for audio and video calls
  PsiMedia is a thick abstraction layer for providing
- audio and video RTP services to Psi-like IM clients.
+ audio and video RTP services to Psi-based IM clients.
  .
  The implementation is based on GStreamer.
