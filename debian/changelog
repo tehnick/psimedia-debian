@@ -1,14 +1,8 @@
-psimedia (1.0.4-2ppa2~wily1) wily; urgency=medium
+psimedia (1.0.4-2ppa1~wily1) wily; urgency=medium
 
   * Some fixes in package.
 
- -- Boris Pek <tehnick@debian.org>  Fri, 16 Oct 2015 02:14:27 +0300
-
-psimedia (1.0.4-2ppa2~wily1) wily; urgency=medium
-
-  * Some fixes in package.
-
- -- Boris Pek <tehnick@debian.org>  Fri, 16 Oct 2015 02:13:53 +0300
+ -- Boris Pek <tehnick@debian.org>  Fri, 16 Oct 2015 02:18:14 +0300
 
 psimedia (1.0.4-2) unstable; urgency=medium
 
