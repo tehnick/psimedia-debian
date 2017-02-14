@@ -1,3 +1,9 @@
+psimedia (1.0.4-3ppa1~zesty1) zesty; urgency=medium
+
+  * Rebuild package on Launchpad.
+
+ -- Boris Pek <tehnick@debian.org>  Tue, 14 Feb 2017 23:33:58 +0300
+
 psimedia (1.0.4-2ppa1~wily1) wily; urgency=medium
 
   * Some fixes in package.
