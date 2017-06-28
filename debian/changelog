@@ -1,3 +1,9 @@
+psimedia (1.0.5-0ppa1~trusty1) trusty; urgency=medium
+
+  * New stable release.
+
+ -- Boris Pek <tehnick@debian.org>  Wed, 28 Jun 2017 16:33:41 +0300
+
 psimedia (1.0.4-3ppa1~zesty1) zesty; urgency=medium
 
   * Rebuild package on Launchpad.
