@@ -1,7 +1,5 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Debianized-By: Ivan Borzenkov <ivan1986@list.ru>
-Debianized-Date: Sat, 18 Jul 2009 16:51:30 +0400
-Upstream-Name: PsiMedia
+Upstream-Name: Psimedia
 Upstream-Contact: Barracuda Networks, Inc
 Source: https://github.com/psi-plus/psimedia/tags
  The orig.tar.gz is just renamed upstream tarball (without changes).
@@ -29,12 +27,8 @@ License: LGPL-2.1+
 
 Files: debian/*
 Copyright: 2009 Ivan Borzenkov <ivan1986@list.ru>
-           2011-2015 Boris Pek <tehnick-8@mail.ru>
-License: GPL-2+
-
-License: GPL-2+
- On Debian systems, the complete text of the GNU General Public License
- can be found in `/usr/share/common-licenses/GPL-2'.
+           2011-2017 Boris Pek <tehnick-8@yandex.ru>
+License: LGPL-2.1+
 
 License: LGPL-2.1+
  This program is free software: you can redistribute it and/or modify it under
