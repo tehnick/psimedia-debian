@@ -1,6 +1,6 @@
 Source: psimedia
 Section: net
-Priority: extra
+Priority: optional
 Maintainer: Boris Pek <tehnick@debian.org>
 Build-Depends: debhelper (>= 9),
                libgstreamer-plugins-base0.10-dev,
@@ -8,9 +8,9 @@ Build-Depends: debhelper (>= 9),
                libspeexdsp-dev,
                qconf
 Homepage: https://github.com/psi-plus/psimedia
-Vcs-Git: git://github.com/tehnick/psimedia-debian.git
+Vcs-Git: https://github.com/tehnick/psimedia-debian.git
 Vcs-Browser: https://github.com/tehnick/psimedia-debian
-Standards-Version: 3.9.6
+Standards-Version: 4.0.0
 
 Package: psi-plus-plugin-psimedia
 Architecture: any
@@ -21,8 +21,8 @@ Depends: gstreamer0.10-alsa [linux-any],
          ${misc:Depends},
          ${shlibs:Depends}
 Replaces: psimedia
-Description: Plugin for Psi+ for audio and video calls
- PsiMedia is a thick abstraction layer for providing
- audio and video RTP services to Psi-based IM clients.
+Description: plugin for Psi+ for audio and video calls
+ Psimedia is a thick abstraction layer for providing audio and video RTP
+ services to Psi IM and Psi+ XMPP/Jabber clients.
  .
- The implementation is based on GStreamer.
+ Current implementation is based on GStreamer.
