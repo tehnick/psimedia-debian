@@ -1,6 +1,6 @@
 Source: psimedia
 Section: net
-Priority: extra
+Priority: optional
 Maintainer: Boris Pek <tehnick@debian.org>
 Build-Depends: debhelper (>= 9),
                libgstreamer-plugins-base0.10-dev,
