@@ -3,7 +3,6 @@ Upstream-Name: Psimedia
 Upstream-Contact: Barracuda Networks, Inc
 Source: https://github.com/psi-plus/psimedia/tags
  The orig.tar.gz is just renamed upstream tarball (without changes).
- See section get-orig-source in debian/rules file for details.
 
 Files: *
 Copyright: 2008-2009 Barracuda Networks, Inc
@@ -27,7 +26,7 @@ License: LGPL-2.1+
 
 Files: debian/*
 Copyright: 2009 Ivan Borzenkov <ivan1986@list.ru>
-           2011-2017 Boris Pek <tehnick-8@yandex.ru>
+           2011-2018 Boris Pek <tehnick-8@yandex.ru>
 License: LGPL-2.1+
 
 License: LGPL-2.1+
