@@ -1,26 +1,19 @@
 #!/usr/bin/make -f
 
-PACKAGE = psimedia
-
-DEBIAN_PATH := $(abspath $(dir $(MAKEFILE_LIST)))
-USCAN_REPORT = $(shell uscan --noconf --report --dehs $(DEBIAN_PATH))
-CUR_VER = $(shell echo "$(USCAN_REPORT)" | sed -n 's/.*<upstream-version>\(.*\)<\/upstream-version>.*/\1/p')
-CUR_URL = $(shell echo "$(USCAN_REPORT)" | sed -n 's/.*<upstream-url>\(.*\)<\/upstream-url>.*/\1/p')
-
 export DEB_CXXFLAGS_MAINT_APPEND = $(shell dpkg-buildflags --get CPPFLAGS)
 export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+CMAKEOPTS = -DUSE_PSI=ON \
+            -DBUILD_DEMO=ON
 
 %:
-	dh $@ --parallel --list-missing
+	dh $@ --parallel
 
 override_dh_auto_configure:
-	qt-qconf
-	./configure
+	dh_auto_configure -- $(CMAKEOPTS)
 
 override_dh_auto_clean:
 	dh_auto_clean
 	rm -rf gstprovider/gstelements/static/lib
 	rm -f conf.log conf.pri configure
-
-get-orig-source:
-	wget -c "$(CUR_URL)" -O "$(PACKAGE)_$(CUR_VER).orig.tar.gz"
