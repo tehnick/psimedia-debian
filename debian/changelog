@@ -1,3 +1,9 @@
+psimedia (1.0.5-49-gde4345c-0ppa1~cosmic1) cosmic; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Mon, 17 Sep 2018 02:06:04 +0300
+
 psimedia (1.0.5-0ppa1~trusty1) trusty; urgency=medium
 
   * New stable release.
