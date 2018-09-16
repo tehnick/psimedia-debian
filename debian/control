@@ -2,21 +2,22 @@ Source: psimedia
 Section: net
 Priority: optional
 Maintainer: Boris Pek <tehnick@debian.org>
-Build-Depends: debhelper (>= 9),
-               libgstreamer-plugins-base0.10-dev,
-               libqt4-dev,
-               libspeexdsp-dev,
-               qconf
+Build-Depends: cmake,
+               debhelper (>= 9),
+               libgstreamer-plugins-bad1.0-dev,
+               libgstreamer-plugins-base1.0-dev,
+               libgstreamer1.0-dev,
+               qtbase5-dev
 Homepage: https://github.com/psi-plus/psimedia
 Vcs-Git: https://github.com/tehnick/psimedia-debian.git
 Vcs-Browser: https://github.com/tehnick/psimedia-debian
-Standards-Version: 4.0.0
+Standards-Version: 4.2.1
 
 Package: psi-plus-plugin-psimedia
 Architecture: any
-Depends: gstreamer0.10-alsa [linux-any],
-         gstreamer0.10-plugins-good,
-         libqca2-plugin-ossl,
+Depends: gstreamer1.0-plugins-base,
+         gstreamer1.0-plugins-good,
+         gstreamer1.0-plugins-ugly,
          psi-plus | psi-plus-webkit,
          ${misc:Depends},
          ${shlibs:Depends}
