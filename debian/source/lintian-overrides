@@ -1,0 +1,2 @@
+# Suppress useless lintian messages which will never be fixed in upstream:
+psimedia source: debian-watch-does-not-check-gpg-signature
