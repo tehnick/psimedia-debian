@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Psimedia
-Upstream-Contact: Barracuda Networks, Inc
+Upstream-Contact: Sergey Ilinykh <rion4ik@gmail.com>
 Source: https://github.com/psi-plus/psimedia/tags
 
 Files: *
