@@ -1,6 +1,7 @@
 Name: PsiMedia
-Changelog: https://github.com/psi-im/psimedia/blob/master/CHANGELOG
 Contact: Sergey Ilinykh <rion4ik@gmail.com>
+Security-Contact: Sergey Ilinykh <rion4ik@gmail.com>
 Repository: https://github.com/psi-im/psimedia.git
 Repository-Browse: https://github.com/psi-im/psimedia
-Security-Contact: Sergey Ilinykh <rion4ik@gmail.com>
+Bug-Submit: https://github.com/psi-im/psimedia/issues
+Changelog: https://github.com/psi-im/psimedia/blob/master/CHANGELOG
