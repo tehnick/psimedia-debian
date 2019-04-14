@@ -1,3 +1,9 @@
+psimedia (1.0.5-53-g42aa053-0ppa1~disco1) disco; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Mon, 15 Apr 2019 00:19:15 +0300
+
 psimedia (1.0.5-52-ged36157-0ppa1~cosmic1) cosmic; urgency=medium
 
   * New Git snapshot.
