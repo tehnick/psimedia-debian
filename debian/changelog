@@ -1,3 +1,9 @@
+psimedia (1.0.5-58-g1a7c559-0ppa1~eoan1) eoan; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Mon, 05 Aug 2019 21:31:52 +0300
+
 psimedia (1.0.5-56-gc0f8c63-0ppa1~eoan1) eoan; urgency=medium
 
   * New Git snapshot.
