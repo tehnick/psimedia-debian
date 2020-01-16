@@ -12,6 +12,7 @@ Homepage: https://github.com/psi-plus/psimedia
 Vcs-Git: https://github.com/tehnick/psimedia-debian.git
 Vcs-Browser: https://github.com/tehnick/psimedia-debian
 Standards-Version: 4.4.1
+Rules-Requires-Root: no
 
 Package: psi-plus-plugin-psimedia
 Architecture: any
