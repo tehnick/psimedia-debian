@@ -1,3 +1,9 @@
+psimedia (1.0.5-67-g493c2bd-0ppa1~focal1) focal; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Fri, 03 Apr 2020 01:23:32 +0300
+
 psimedia (1.0.5-66-gff9d902-0ppa2~focal1) focal; urgency=medium
 
   * Small improvements in the package.
